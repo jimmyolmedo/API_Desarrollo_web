@@ -25,3 +25,9 @@ template += `
 datosSection.innerHTML = template;
 }
 renderDatos();
+
+function FilterBySaiyan(){
+    const res = fetch("https://dragonball-api.com/api/characters?race=Saiyan");
+const datos = res.json();
+return datos;
+}
