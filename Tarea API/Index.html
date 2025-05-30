@@ -11,16 +11,19 @@
     <h1>Dragon ball-Personajes</h1>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">all</a>
+    <a class="navbar-brand" href="#"  onclick="FilterByAll()">all</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Human</a>
-        <a class="nav-link" href="#">saiyan</a>
-        <a class="nav-link" href="#">Namekian</a>
-        <a class="nav-link disabled" aria-disabled="true">Android</a>
+        <a class="nav-link active" aria-current="page" href="#" onclick="FilterByHuman()">Human</a>
+        <a class="nav-link" href="#" onclick="FilterBySaiyan()">saiyan</a>
+        <a class="nav-link" href="#" onclick="FilterByNamekian()">Namekian</a>
+        <a class="nav-link" href="#" onclick="FilterByAndroid()">Android</a>
+        <a class="nav-link" href="#" onclick="FilterByMale()">Male</a>
+        <a class="nav-link" href="#" onclick="FilterByFemale()">Female</a>
+        <a class="nav-link" href="#" onclick="FilterByVillain()">Villain</a>
       </div>
     </div>
   </div>

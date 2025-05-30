@@ -1,5 +1,5 @@
 const datosSection = document.querySelector(".datos");
-const apiURL = "https://dragonball-api.com/api/characters";
+let apiURL = "https://dragonball-api.com/api/characters?affiliation=Z Fighter";
 
 async function getDatos() {
 const res = await fetch(apiURL);
@@ -11,7 +11,7 @@ async function renderDatos() {
 const datos = await getDatos();
 let template = "";
 
-datos.items.forEach((datos) => {
+datos.forEach((datos) => {
 template += `
     <div class="dato">
         <h3>${datos.name}</h3>
@@ -26,8 +26,42 @@ datosSection.innerHTML = template;
 }
 renderDatos();
 
+function FilterByAll(){
+    apiURL = "https://dragonball-api.com/api/characters?affiliation=Z Fighter"
+    renderDatos()
+}
+
 function FilterBySaiyan(){
-    const res = fetch("https://dragonball-api.com/api/characters?race=Saiyan");
-const datos = res.json();
-return datos;
+    apiURL = "https://dragonball-api.com/api/characters?race=Saiyan"
+    renderDatos()
+}
+
+function FilterByHuman(){
+    apiURL = "https://dragonball-api.com/api/characters?race=Human"
+    renderDatos()
+}
+
+function FilterByNamekian(){
+    apiURL = "https://dragonball-api.com/api/characters?race=Namekian"
+    renderDatos()
+}
+
+function FilterByAndroid(){
+    apiURL = "https://dragonball-api.com/api/characters?race=Android"
+    renderDatos()
+}
+
+function FilterByMale(){
+    apiURL = "https://dragonball-api.com/api/characters?gender=Male"
+    renderDatos()
+}
+
+function FilterByFemale(){
+    apiURL = "https://dragonball-api.com/api/characters?gender=Female"
+    renderDatos()
+}
+
+function FilterByVillain(){
+    apiURL = "https://dragonball-api.com/api/characters?affiliation=Villain"
+    renderDatos()
 }
