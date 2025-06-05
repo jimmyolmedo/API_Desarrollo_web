@@ -32,3 +32,7 @@ body {
 .next{
     color: blue;
 }
+article{
+    padding-top: 5%;
+    display: flex;
+}
