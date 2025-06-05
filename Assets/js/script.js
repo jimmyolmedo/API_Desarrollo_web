@@ -35,6 +35,7 @@ function FilterByAll(){
 function FilterBySaiyan(){
     apiURL = "https://dragonball-api.com/api/characters?race=Saiyan"
     renderDatos()
+    setBg('saiyan-theme');
 }
 
 function FilterByHuman(){
@@ -67,8 +68,12 @@ function FilterByVillain(){
     renderDatos()
 }
 
+// las funciones Filter son usada para filtrar los datos desde la api 
+
+
 function setBg(themeName)
 {
     localStorage.setItem('theme', themeName);
     document.documentElement.className = themeName; 
 }
+// esta funcion cambia el fondo de la pagina dependiendo  la función filter
