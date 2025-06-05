@@ -1,0 +1,28 @@
+.base-theme{
+    --img-bg:url("https://i.pinimg.com/736x/49/61/e1/4961e119403e1e7490bdc91b810a6ac5.jpg");
+}
+
+
+.namek-theme{
+    --img-bg: url:("https://areajugones.sport.es/wp-content/uploads/2023/11/namek-dragon-ball.jpg")
+}
+
+
+body {
+    background-image:var(--img-bg); 
+    background-size: 100%;
+    text-align: center;
+    padding: 0px 40px;
+}
+.datos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.dato {
+    background: rgb(52, 53, 53);
+    color: white;
+}
+.next{
+    color: blue;
+}

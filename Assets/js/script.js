@@ -29,6 +29,7 @@ renderDatos();
 function FilterByAll(){
     apiURL = "https://dragonball-api.com/api/characters?affiliation=Z Fighter"
     renderDatos()
+    setBg('base-theme');
 }
 
 function FilterBySaiyan(){
@@ -64,4 +65,10 @@ function FilterByFemale(){
 function FilterByVillain(){
     apiURL = "https://dragonball-api.com/api/characters?affiliation=Villain"
     renderDatos()
+}
+
+function setBg(themeName)
+{
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName; 
 }
