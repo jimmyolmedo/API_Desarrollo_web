@@ -41,6 +41,7 @@ function FilterBySaiyan(){
 function FilterByHuman(){
     apiURL = "https://dragonball-api.com/api/characters?race=Human"
     renderDatos()
+    setBg('human-theme');
 }
 
 function FilterByNamekian(){
