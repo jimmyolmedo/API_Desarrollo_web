@@ -6,11 +6,25 @@
     --img-bg:url("https://i.pinimg.com/736x/05/17/54/051754dd508e1207b3b4153e056366c9.jpg");
 
 }
+
 .namek-theme{
     --img-bg:url("https://areajugones.sport.es/wp-content/uploads/2023/11/namek-dragon-ball.jpg");
 }
+
 .human-theme{
     --img-bg:url("https://i.pinimg.com/736x/9f/b1/20/9fb1204564fc911728b4dafa6d1443c4.jpg");
+}
+.android-theme{
+    --img-bg:url("https://w0.peakpx.com/wallpaper/278/827/HD-wallpaper-android-18-android-17-dragon-ball-anime-anime-girls-anime-boys-vertical-portrait-display-street-city-thumbnail.jpg");
+}
+.women-theme{
+    --img-bg:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvYCSt1rAy7WqPnyLUGucsq9jkSvkDKsr3Eg&s");
+}
+.men-theme{
+    --img-bg:url("https://i.pinimg.com/736x/44/c2/92/44c2922eb14340cb42dd868609e12040.jpg");
+}
+.villian-theme{
+    --img-bg:url("https://ih1.redbubble.net/image.3683856210.7321/flat,750x,075,f-pad,750x1000,f8f8f8.jpg");
 }
 
 

@@ -53,21 +53,25 @@ function FilterByNamekian(){
 function FilterByAndroid(){
     apiURL = "https://dragonball-api.com/api/characters?race=Android"
     renderDatos()
+    setBg('android-theme');
 }
 
 function FilterByMale(){
     apiURL = "https://dragonball-api.com/api/characters?gender=Male"
     renderDatos()
+    setBg('men-theme');
 }
 
 function FilterByFemale(){
     apiURL = "https://dragonball-api.com/api/characters?gender=Female"
     renderDatos()
+    setBg('women-theme');
 }
 
 function FilterByVillain(){
     apiURL = "https://dragonball-api.com/api/characters?affiliation=Villain"
     renderDatos()
+    setBg('villian-theme');
 }
 
 // las funciones Filter son usada para filtrar los datos desde la api 
