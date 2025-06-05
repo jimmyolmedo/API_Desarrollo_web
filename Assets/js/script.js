@@ -47,6 +47,7 @@ function FilterByHuman(){
 function FilterByNamekian(){
     apiURL = "https://dragonball-api.com/api/characters?race=Namekian"
     renderDatos()
+    setBg('namek-theme');
 }
 
 function FilterByAndroid(){
